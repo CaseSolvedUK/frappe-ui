@@ -1,5 +1,5 @@
 <script setup>
-import { Badge } from './src'
+import { Badge } from '../src'
 </script>
 
 <template>

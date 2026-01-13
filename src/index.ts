@@ -40,7 +40,6 @@ export { default as TabList } from './components/Tabs/TabList.vue'
 export { default as TabPanel } from './components/Tabs/TabPanel.vue'
 export * from './components/TextInput'
 export * from './components/Textarea'
-export * from './components/TextEditor'
 export * from './components/TimePicker'
 export { default as ListView } from './components/ListView/ListView.vue'
 export { default as List } from './components/ListView/ListView.vue'
@@ -120,5 +119,4 @@ export {
 
 // plugin
 export { default as pageMetaPlugin } from './utils/pageMeta.js'
-export { default as FrappeUI } from './utils/plugin.js'
 export { confirmDialog } from './utils/confirmDialog.js'
