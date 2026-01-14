@@ -39,8 +39,11 @@ export default defineConfig({
         lib: {
           entry: {
             index:  'src/index.ts',
+            frappe: 'frappe/index.js',
             plugin: 'src/plugin.ts',
+            resources: 'src/resources/index.js',
             'text-editor': 'src/text-editor.ts',
+            vite: 'vite/index.js',
           },
           formats: ['es'],
         },

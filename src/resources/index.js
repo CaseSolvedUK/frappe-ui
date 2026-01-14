@@ -5,3 +5,5 @@ export {
 } from './documentResource'
 export { createListResource, getCachedListResource } from './listResource'
 export { default as resourcesPlugin } from './plugin'
+export { saveLocal, deleteLocal, getLocal } from './local'
+export { onDocUpdate } from './realtime'

@@ -1,6 +1,6 @@
 import path from 'path'
 import { fileURLToPath } from 'url'
-import { findAppsFolder } from './utils.js'
+import { findAppsFolder } from './utils'
 import { DocTypeInterfaceGenerator } from './doctypeInterfaceGenerator.js'
 
 // Handle termination signals to exit cleanly

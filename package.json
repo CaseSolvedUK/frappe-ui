@@ -19,6 +19,20 @@
     "story:build": "histoire build && cp 404.html .histoire/dist",
     "story:preview": "histoire preview"
   },
+  "exports": {
+    ".": "./dist/index.js",
+    "./plugin": "./dist/plugin.js",
+    "./text-editor": "./dist/text-editor.js",
+    "./frappe": "./dist/frappe.js",
+    "./resources": "./dist/resources.js",
+    "./inter.css": "./src/fonts/Inter/inter.css",
+    "./style.css": "./src/style.css",
+    "./tailwind-preset": "./src/tailwind/preset.js",
+    "./vite": {
+      "node": "./dist/vite.js",
+      "default": "./dist/vite.js"
+    }
+  },
   "files": [
     "frappe",
     "src",
