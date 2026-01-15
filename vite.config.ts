@@ -3,6 +3,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { lucideIcons } from './vite/lucideIcons'
 import { visualizer } from 'rollup-plugin-visualizer'
+import pkg from "./package.json"
 
 const buildApp = process.env.BUILD_APP === 'true'
 
@@ -26,7 +27,6 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    include: ['tailwind.config.js'],
   },
   build: buildApp
     ? {
@@ -50,7 +50,13 @@ export default defineConfig({
           formats: ['es'],
         },
         rollupOptions: {
-          external: (id) => !id.startsWith('.') && !path.isAbsolute(id),
+          external: [
+            /^node:/, 'path', 'url', 'child_process', 'fs', 'util', 'stream', 'os', 'module', 'constants',
+            ...Object.keys(pkg.peerDependencies ?? {}),
+            ...Object.keys(pkg.peerDependencies ?? {}).map(
+              dep => new RegExp(`^${dep}/`)
+            ),
+          ],
           output: {
             preserveModules: true,
             preserveModulesRoot: 'src',
