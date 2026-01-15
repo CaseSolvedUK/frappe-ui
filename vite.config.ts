@@ -31,6 +31,8 @@ export default defineConfig({
   build: buildApp
     ? {
         outDir: 'dist', // inside root: demo
+        target: 'es2018',
+        sourcemap: true,
         rollupOptions: {
           input: path.resolve(__dirname, 'demo/main.js'),
         },
@@ -64,7 +66,9 @@ export default defineConfig({
         },
         cssCodeSplit: false,
         outDir: 'dist',
-        minify: 'terser',
+        target: 'es2018',
+        sourcemap: false,
+        minify: 'esbuild',
         emptyOutDir: true,
       }
 })

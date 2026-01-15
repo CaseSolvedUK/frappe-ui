@@ -5,6 +5,7 @@
   "main": "./src/index.ts",
   "type": "module",
   "scripts": {
+    "prepare": "yarn build",
     "test": "BUILD_APP=true vitest --run",
     "type-check": "tsc --noEmit",
     "prettier": "yarn prettier -w ./src",
