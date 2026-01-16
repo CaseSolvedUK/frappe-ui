@@ -13,13 +13,13 @@ export default defineConfig({
   plugins: [
     vue(),
     lucideIcons(),
-    visualizer({
-      open: false,
-      template: 'raw-data',
-      filename: 'dist/stats.json',
+//    visualizer({
+//      open: false,
+//      template: 'raw-data',
+//      filename: 'dist/stats.json',
       //template: 'flamegraph',
       //filename: 'dist/stats.html',
-    }),
+//    }),
   ],
   resolve: {
     alias: {
@@ -71,7 +71,7 @@ export default defineConfig({
         cssCodeSplit: false,
         outDir: 'dist',
         target: 'esnext',
-        sourcemap: false,
+        sourcemap: true,
         minify: 'esbuild',
         emptyOutDir: true,
       }
