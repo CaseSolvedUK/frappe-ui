@@ -86,6 +86,10 @@
     "marked": "^15.0.12",
     "socket.io-client": "^4.5.1",
     "tippy.js": "^6.3.7",
+    "prosemirror-model": "^1.25.2",
+    "prosemirror-state": "^1.4.3",
+    "prosemirror-view": "^1.40.0",
+    "prosemirror-transform": "^1.10.4",
     "unplugin-auto-import": "^19.3.0",
     "unplugin-icons": "^22.1.0",
     "unplugin-vue-components": "^28.4.1"
@@ -98,11 +102,7 @@
     "feather-icons": "^4.28.0",
     "highlight.js": "^11.11.1",
     "lucide-static": "^0.535.0",
-    "reka-ui": "^2.5.0",
-    "prosemirror-model": "^1.25.2",
-    "prosemirror-state": "^1.4.3",
-    "prosemirror-view": "^1.40.0",
-    "prosemirror-transform": "^1.10.4"
+    "reka-ui": "^2.5.0"
   },
   "devDependencies": {
     "@histoire/plugin-vue": "^0.17.17",
@@ -114,10 +114,6 @@
     "highlight.js": "^11.11.1",
     "lucide-static": "^0.535.0",
     "reka-ui": "^2.5.0",
-    "prosemirror-model": "^1.25.2",
-    "prosemirror-state": "^1.4.3",
-    "prosemirror-view": "^1.40.0",
-    "prosemirror-transform": "^1.10.4",
     "histoire": "^0.17.17",
     "lint-staged": "^15.0.0",
     "msw": "^2.7.0",
