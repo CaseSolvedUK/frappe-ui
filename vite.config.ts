@@ -70,7 +70,7 @@ export default defineConfig({
         },
         cssCodeSplit: false,
         outDir: 'dist',
-        target: 'es2018',
+        target: 'esnext',
         sourcemap: false,
         minify: 'esbuild',
         emptyOutDir: true,
