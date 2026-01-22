@@ -52,7 +52,7 @@ export default defineConfig({
         rollupOptions: {
           external: [
             /^node:/, 'path', 'url', 'child_process', 'fs',
-            'util', 'stream', 'os', 'module', 'constants', 'events',
+            'util', 'stream', 'os', 'module', 'constants', 'events', 'fsevents',
             ...Object.keys(pkg.peerDependencies ?? {}),
             ...Object.keys(pkg.peerDependencies ?? {}).map(
               dep => new RegExp(`^${dep}/`)
