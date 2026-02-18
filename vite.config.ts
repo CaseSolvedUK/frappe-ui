@@ -72,7 +72,7 @@ export default defineConfig({
         cssCodeSplit: false,
         outDir: 'dist',
         target: 'esnext',
-        sourcemap: true,
+        sourcemap: false,
         minify: 'esbuild',
         emptyOutDir: true,
       }
