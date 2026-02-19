@@ -115,6 +115,8 @@ export {
   useNewDoc,
   useDoctype,
   useFrappeFetch,
+  FrappeResponseError,
+  docStore,
 } from './data-fetching'
 
 // plugin
